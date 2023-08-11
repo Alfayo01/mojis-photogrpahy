@@ -1,18 +1,18 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Route } from 'react-router-dom';
 
 const Contact = () => {
     return (
         <>
-        <Routes>
-            <Route path="/">
+            <Route path="/contact">
                 <Header/>
+                <p>Contact us on WhatsApp</p>
                 <Footer/>
             </Route>
-        </Routes>
         </>
-       ) 
+       );
 }
 
 export default Contact;
