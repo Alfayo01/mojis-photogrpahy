@@ -5,13 +5,11 @@ import { Route } from 'react-router-dom';
 
 const Contact = () => {
     return (
-        <>
             <Route path="/contact">
                 <Header/>
                 <p>Contact us on WhatsApp</p>
                 <Footer/>
             </Route>
-        </>
        );
 }
 
