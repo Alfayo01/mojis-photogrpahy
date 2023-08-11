@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Pacifico&display=swap');
+
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-style: bold;
+  font-size: medium;
+}
+
+.title-bar *{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 1rem;
+  
+}
+.navbar {
+  border: 2px inset gray;
+  background-color: rgb(194, 65, 12);
+}
+.navbar li,a{
+  position: sticky;
+  padding: 1rem;
+  margin-left: auto;
+  margin-top: 0;
+  float: right;
+}
+.company-title {
+  font-family: 'Pacifico', Roboto;
+  font-weight: 700;
+  font-size: 3.5em;
+  text-align: center;
+  padding: 3.5em 3.5em;
+  margin: auto auto;
+}
+.header .logo {
+  float: left;
+}
+#error-page {
+  font-size: 4em;
+  font-style: bold;
+  font-weight: 800;
+  text-align: center;
+  margin: auto auto;
+  padding: 2em;
+  line-height: 0.8em;
+}
+
+p {
+  padding-top: 2em;
+}
+
+p i {
+  color: gray;
+  font-weight: 900;
+  font-size: 1.8em;
+
+}
+.footer-page {
+  border: 2px hidden gray;
+  background-color: rgb(7 8 13);
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .navbar a, li {
+      align-items: center; 
+      list-style-type: none;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: row;
+      text-decoration-line: none;
+      gap: 1rem;
+      margin: auto auto;
+    }
+
+    a{
+      padding: 1rem;
+    }
+  
+ 
+}
