@@ -7,7 +7,7 @@ const Gallery = () => {
    return (
     <>
         <Header/>
-            <Image/>
+        <Image/>
         <Footer/>
     </>
    ); 

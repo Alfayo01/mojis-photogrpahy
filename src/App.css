@@ -67,7 +67,9 @@ p i {
 .footer-page {
   border: 2px hidden gray;
   background-color: rgb(7 8 13);
-
+  color: #FFFFFF;
+  margin: auto auto;
+  padding: 2em;
 }
 
 

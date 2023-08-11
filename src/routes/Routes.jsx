@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Routes as Links, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
@@ -6,12 +6,20 @@ import Gallery from '../pages/Gallery';
 
 export const Routes = () => {
     return (
-        <Routes>
+        <>
+        <Links>
             <Route path="/home" element={<Home/>} />
-            <Route path="/about us" element={<Contact/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+        </Links>
+        <Links>
+            <Route path="/about us" element={<About/>}/>
+        </Links>
+        <Links>
+            <Route path="/contact us" element={<Contact/>}/>
+        </Links>
+        <Links>
             <Route path="/gallery" element={<Gallery/>}/>
-        </Routes>
+        </Links>
+        </>
     );
 
 };
