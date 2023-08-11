@@ -12,7 +12,7 @@ let gallery = [
 const Image = () => {
     return (
         <>
-            <img src={gallery.url1} width={gallery.width} height={gallery.height} alt="Picture of camera"/>
+            <img className="img-gallery" src={gallery.url1} width={gallery.width} height={gallery.height} alt="Picture of camera"/>
         </>
     );
 }

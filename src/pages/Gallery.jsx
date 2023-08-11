@@ -1,15 +1,16 @@
 import React from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Image from '../components/Image';
+import Footer from '../components/Footer';
+
 
 const Gallery = () => {
    return (
-    <>
-        <Header/>
+    <main>
+        <Header />
         <Image/>
         <Footer/>
-    </>
+    </main>
    ); 
     
 }

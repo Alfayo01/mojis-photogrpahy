@@ -12,8 +12,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import ErrorPage from './error-page';
-//import { Routes } from "./routes/Routes";
-//import Navigation from './routes/Navigation';
 
 
 const router = createBrowserRouter([

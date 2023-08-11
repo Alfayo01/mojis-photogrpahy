@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Pacifico&display=swap');
 
 
-html, * {
+html {
   box-sizing: border-box;
   margin: 0;
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -23,14 +23,16 @@ html, * {
   
 }
 .navbar {
+
   border: 2px inset gray;
   background-color: rgb(194, 65, 12);
+
 }
 .navbar li,a{
-  position: sticky;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-left: auto;
-  margin-top: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   float: right;
 }
 .company-title {
@@ -45,7 +47,7 @@ html, * {
   float: left;
 }
 #error-page {
-  font-size: 4em;
+  font-size: 2em;
   font-style: bold;
   font-weight: 800;
   text-align: center;
@@ -70,6 +72,26 @@ p i {
   color: #FFFFFF;
   margin: auto auto;
   padding: 2em;
+}
+
+.link-hover li:hover{
+  background-color: orangered;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 1rem;
+}
+
+.image-gallery {
+  display: inline-block;
+  object-fit: cover;
 }
 
 

@@ -6,20 +6,15 @@ import Gallery from '../pages/Gallery';
 
 export const Routes = () => {
     return (
-        <>
-        <Links>
+         <Links>
             <Route path="/home" element={<Home/>} />
-        </Links>
-        <Links>
+        
             <Route path="/about us" element={<About/>}/>
-        </Links>
-        <Links>
+       
             <Route path="/contact us" element={<Contact/>}/>
-        </Links>
-        <Links>
+       
             <Route path="/gallery" element={<Gallery/>}/>
-        </Links>
-        </>
+        </Links>    
     );
 
 };
