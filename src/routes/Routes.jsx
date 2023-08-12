@@ -1,5 +1,5 @@
 import { Routes as Links, Route } from 'react-router-dom';
-import Home from '../pages/Home';
+//import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Gallery from '../pages/Gallery';
@@ -10,7 +10,7 @@ export const Routes = () => {
          <Links>
             <Route path="/" element= {<App/> } />
 
-            <Route path="/home" element={<Home/>} />
+            <Route path="/home" element={<App/>} />
         
             <Route path="/about us" element={<About/>}/>
        
