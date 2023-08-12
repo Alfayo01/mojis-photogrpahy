@@ -6,11 +6,11 @@ import Footer from '../components/Footer';
 
 const Gallery = () => {
    return (
-    <main>
-        <Header />
+    <div>
+        <Header/>
         <Image/>
         <Footer/>
-    </main>
+    </div>
    ); 
     
 }

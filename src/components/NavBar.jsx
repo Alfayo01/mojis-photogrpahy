@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../routes/Navigation';
-//import { Link } from "react-router-dom";
+
 
 const NavBar = () => {
     return (

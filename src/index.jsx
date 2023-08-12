@@ -24,19 +24,20 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      {
-        path: "/about us",
-        element: <About />,
-      },
-      {
-        path: "/contact us",
-        element: <Contact />,
-      },
-      {
-        path: "/gallery",
-        element: <Gallery />,
-      },
+     
     ],
+  },
+  {
+    path: "/about us",
+    element: <About />,
+  },
+  {
+    path: "/contact us",
+    element: <Contact />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Routes } from './Routes';
-//import  { Home } from '../pages/Home';
-//import { About } from '../pages/About';
-//import { Contact } from '../pages/Contact';
-//import { Gallery } from '../pages/Gallery';
 
 const Navigation = () => {
     return (

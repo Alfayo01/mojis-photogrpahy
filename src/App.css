@@ -12,6 +12,7 @@ html {
 }
 
 .title-bar *{
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,20 +21,21 @@ html {
   list-style-type: none;
   text-decoration: none;
   gap: 1rem;
+  top: 0;
   
 }
 .navbar {
 
   border: 2px inset gray;
   background-color: rgb(194, 65, 12);
-
+  position: sticky;
 }
 .navbar li,a{
   padding: 0.5rem;
   margin-left: auto;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  float: right;
+  
 }
 .company-title {
   font-family: 'Pacifico', Roboto;
@@ -100,20 +102,50 @@ p i {
 
 
 
-@media screen and (max-width:600px) {
-    .navbar a, li {
+@media screen and (orientation: portrait) {
+  .title-bar *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 0.5rem;
+    
+  }
+  
+  .navbar {
+
+    border: 2px inset gray;
+    background-color: rgb(194, 65, 12);
+  }
+  
+    .navbar li {
       align-items: center; 
       list-style-type: none;
-      padding-left: 1rem;
-      display: flex;
-      flex-direction: row;
-      text-decoration-line: none;
-      gap: 1rem;
+      padding-left: 0;
+      gap: 0.5rem;
+      margin: auto auto;
+    }
+    .company-title {
+      font-family: 'Pacifico', Roboto;
+      font-weight: 700;
+      font-size: 2em;
+      text-align: center;
+      padding: 3.5em 2em;
       margin: auto auto;
     }
 
+    .link-hover li:hover{
+      background-color: orangered;
+      font-weight: 600;
+      font-style: bold;
+      font-size: 1.5em;
+    }
+
     a{
-      padding: 1rem;
+      padding: 0.5rem;
     }
   
  
