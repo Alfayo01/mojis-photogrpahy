@@ -7,6 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
+import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
@@ -16,29 +17,28 @@ import ErrorPage from './error-page';
 const router = createBrowserRouter([
   {
     path: "/", 
-    element: <App />,
-    errorElement: <ErrorPage />,
-
+    element: <App/>,
+    children: [
+      {
+        index: true,
+        element: <Home/>,
+        path: "/home",
+      },
+    ],
+    errorElement: <ErrorPage/>,
   },
-  {
-    path: "/home",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
+  
   {
     path: "/about us",
-    element: <About />,
-    errorElement: <ErrorPage />,
+    element: <About/>,
   },
   {
     path: "/contact us",
-    element: <Contact />,
-    errorElement: <ErrorPage />,
+    element: <Contact/>,
   },
   {
     path: "/gallery",
-    element: <Gallery />,
-    errorElement: <ErrorPage />,
+    element: <Gallery/>,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
