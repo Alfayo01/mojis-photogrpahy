@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import NavBar from '../components/NavBar';
 import Image from '../components/Image';
 import Footer from '../components/Footer';
 
@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const Gallery = () => {
    return (
     <div>
-        <Header/>
+        <NavBar/>
         <Image/>
         <Footer/>
     </div>

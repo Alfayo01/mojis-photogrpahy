@@ -3,20 +3,22 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Gallery from '../pages/Gallery';
-import App from '../App';
+import ErrorPage from '../error-page';
+//import App from '../App';
+
 
 export const Routes = () => {
     return (
          <Links>
-            <Route path="/" element= {<App/>}/>
-       
-            <Route index element={<Home/>}/>
+            <Route path="/" element= {<Home/>}>
+                <Route path="/home" element={<Home/>}/>
+                <Route exact path="about us" element={<About/>}/>
+                <Route exact path="contact us" element={<Contact/>}/>
+                <Route exact path="gallery" element={<Gallery/>}/>
+                <Route path="*" element={<ErrorPage/>}/>
+            </Route>
         
-            <Route path="/about us" element={<About/>}/>
-       
-            <Route path="/contact us" element={<Contact/>}/>
-       
-            <Route path="/gallery" element={<Gallery/>}/>
+            
         </Links>    
     );
 
