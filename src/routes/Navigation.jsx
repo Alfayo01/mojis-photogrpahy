@@ -16,8 +16,7 @@ const Navigation = () => {
                 <Link to="/gallery">Gallery</Link></li>
             <li>
                 <Link to="/blogs">Blogs</Link></li>
-        </ul>
-            
+        </ul>   
             
         </>
     );

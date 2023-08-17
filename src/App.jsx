@@ -16,31 +16,34 @@ const router = createBrowserRouter([
   {
     path: "/", 
     element: <BaseLayout/>,
+    children: [
+      {
+        path: "home",
+        element: <Home/>
+      },
+      {
+        path: "about us",
+        element: <About/>,
+      },
+      {
+        path: "contact us",
+        element: <Contact/>,
+      },
+      {
+        path: "gallery",
+        element: <Gallery/>,
+      },
+      {
+        path: "blogs",
+        element: <Blog/>
+      },
+      {
+        path: "*",
+        errorElement: <ErrorPage/>,
+      },
+    ]
   },
-  {
-    path: "home",
-    element: <Home/>
-  },
-  {
-    path: "about us",
-    element: <About/>,
-  },
-  {
-    path: "contact us",
-    element: <Contact/>,
-  },
-  {
-    path: "gallery",
-    element: <Gallery/>,
-  },
-  {
-    path: "/blogs",
-    element: <Blog/>
-  },
-  {
-    path: "*",
-    errorElement: <ErrorPage/>,
-  },
+  
 ]);
 
 function App() {
