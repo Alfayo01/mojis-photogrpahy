@@ -16,7 +16,7 @@ const Navigation = () => {
                 <Link to="/gallery">Gallery</Link></li>
         </ul>
             
-            //<AppRoutes/>
+            
         </>
     );
 }
