@@ -1,14 +1,13 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import BaseLayout from '../layouts/BaseLayout';
 
 
 const Contact = () => {
     return (
            <>
-                <NavBar/>
-                <p>Contact us on WhatsApp</p>
-                <Footer/>
+                <BaseLayout>
+                    <h2>Contact Page</h2>
+                </BaseLayout>
             </>
        );
 }

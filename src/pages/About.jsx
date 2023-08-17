@@ -1,13 +1,14 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import BaseLayout from '../layouts/BaseLayout';
+
 
 
 const About = () => {
     return (
         <>
-            <NavBar/>
-            <Footer/>
+            <BaseLayout>
+                <h2>About Page</h2>
+            </BaseLayout>
         </>
        ) 
 

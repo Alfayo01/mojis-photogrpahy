@@ -1,15 +1,14 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import BaseLayout from '../layouts/BaseLayout';
 import Image from '../components/Image';
-import Footer from '../components/Footer';
-
 
 const Gallery = () => {
    return (
     <div>
-        <NavBar/>
-        <Image/>
-        <Footer/>
+        <BaseLayout>
+            <h2>Gallery Page</h2>
+            <Image/>
+        </BaseLayout>
     </div>
    ); 
     
