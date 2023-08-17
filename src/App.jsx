@@ -4,6 +4,7 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+import BaseLayout from './layouts/BaseLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -37,7 +38,10 @@ const router = createBrowserRouter([
 function App() {
   return (
       <RouterProvider router={router}>
-           <Outlet/>
+          <main>
+            <Outlet/>
+          </main>
+           
       </RouterProvider>
   );
 }
