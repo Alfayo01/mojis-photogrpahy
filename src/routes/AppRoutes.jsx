@@ -10,7 +10,7 @@ import { Routes } from 'react-router-dom';
 export const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element= {<Home/>}>
+            <Route path="/" element= {<BaseLayout/>}>
                 <Route path="/home" element={<Home/>}/>
                 <Route exact path="about us" element={<About/>}/>
                 <Route exact path="contact us" element={<Contact/>}/>

@@ -8,14 +8,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
-import ErrorPage from './error-page';
+//import ErrorPage from './error-page';
 
 
 const router = createBrowserRouter([
   {
     path: "/", 
-    element: <Home/>,
-    error: <ErrorPage/>
+    element: <BaseLayout/>,
   },
   {
     path: "home",
