@@ -92,8 +92,12 @@ p i {
 }
 
 .img-gallery {
-  display: inline-block;
+  display: inline-grid;
   object-fit: cover;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+
 }
 
 

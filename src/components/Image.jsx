@@ -1,23 +1,26 @@
 import React from "react";
-import camera from "../images/camera.jpg";
+import camera from "../assets/camera.jpg";
 
 
 let gallery = [
     {
         id: 1,
         src: camera,
-        width: "auto",
-        height: "auto",
         alt: "Picture of camera",
     },
 
+    {
+        id: 2,
+        src: 'https://depositphotos.com/photos/surf.html?qview=8450806',
+        alt: "Picture of surfer",
+    },
 ];
 
-const Image = () => {
+const Image = ({id, src }) => {
     return (
         <>
         {gallery.map((image) => ( 
-            <img key={gallery.id} className="img-gallery" src={gallery.src} width={gallery.width} height={gallery.height} alt={gallery.alt}/>
+            <img key={id} className="img-gallery" width={780} height={780} src={ src } alt={ image.alt }/>
         ))
         }
         </>
