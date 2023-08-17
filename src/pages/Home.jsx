@@ -1,13 +1,14 @@
 import React from 'react';
-import BaseLayout from '../layouts/BaseLayout';
+import CompanyName from '../components/CompanyName';
 
 const Home = () => {
     
     return (
         <>
-                <BaseLayout>
-
-                </BaseLayout>
+            <h2>Home Page</h2>
+            <main>
+            <CompanyName/>
+            </main>
         </>
     ); 
     
