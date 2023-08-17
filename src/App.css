@@ -91,7 +91,7 @@ p i {
   gap: 1rem;
 }
 
-.image-gallery {
+.img-gallery {
   display: inline-block;
   object-fit: cover;
 }
