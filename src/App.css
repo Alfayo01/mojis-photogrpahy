@@ -72,7 +72,7 @@ p i {
   border: 2px hidden gray;
   background-color: rgb(7 8 13);
   color: #FFFFFF;
-  margin: auto auto;
+  margin: 4rem auto;
   padding: 2em;
 }
 
@@ -92,14 +92,28 @@ p i {
 }
 
 .img-gallery {
-  display: inline-grid;
   object-fit: cover;
-  width: auto;
-  height: auto;
   padding: 1rem;
-
+  margin: 1.3rem auto;
+  aspect-ratio: 16/9;
 }
 
+.gallery-container {
+  display: grid;
+  gap: 2rem;
+  opacity: 1;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.bg-img .img-gallery {
+
+  aspect-ratio: 16/9;
+  padding: 0;
+  margin: 0rem 0;
+  opacity: 0.8;
+}
 
 
 

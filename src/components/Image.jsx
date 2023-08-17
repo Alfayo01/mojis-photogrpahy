@@ -1,29 +1,16 @@
 import React from "react";
-import camera from "../assets/camera.jpg";
 
 
-let gallery = [
-    {
-        id: 1,
-        src: camera,
-        alt: "Picture of camera",
-    },
 
-    {
-        id: 2,
-        src: 'https://depositphotos.com/photos/surf.html?qview=8450806',
-        alt: "Picture of surfer",
-    },
-];
 
-const Image = ({id, src }) => {
+const Image = ({src, alt}) => {
     return (
         <>
-        {gallery.map((image) => ( 
-            <img key={id} className="img-gallery" width={780} height={780} src={ src } alt={ image.alt }/>
-        ))
-        }
+       
+           <img className="img-gallery" width={780} height={1000} src={ src } alt={ alt }/>
+                
         </>
+    
     );
 }
 export default Image;
