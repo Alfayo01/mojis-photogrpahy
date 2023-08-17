@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 //import { AppRoutes } from './AppRoutes';
 
 const Navigation = () => {
@@ -7,15 +7,15 @@ const Navigation = () => {
        <> 
         <ul className="link-hover">
             <li>
-                <Link to="/home">Home</Link></li>
+                <NavLink to="/home">Home</NavLink></li>
             <li>
-                <Link to="/about us ">About us</Link></li>
+                <NavLink to="/about us ">About us</NavLink></li>
             <li>
-                <Link to="/contact us">Contact us</Link></li>
+                <NavLink to="/contact us">Contact us</NavLink></li>
             <li>
-                <Link to="/gallery">Gallery</Link></li>
+                <NavLink to="/gallery">Gallery</NavLink></li>
             <li>
-                <Link to="/blogs">Blogs</Link></li>
+                <NavLink to="/blogs">Blogs</NavLink></li>
         </ul>   
             
         </>
