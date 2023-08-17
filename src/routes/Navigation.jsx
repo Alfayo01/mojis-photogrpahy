@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Routes } from './Routes';
+//import { AppRoutes } from './AppRoutes';
 
 const Navigation = () => {
     return (
@@ -16,7 +16,7 @@ const Navigation = () => {
                 <Link to="/gallery">Gallery</Link></li>
         </ul>
             
-            <Routes/>
+            //<AppRoutes/>
         </>
     );
 }

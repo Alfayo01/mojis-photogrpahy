@@ -1,11 +1,13 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import BaseLayout from '../layouts/BaseLayout';
+import CompanyName from '../components/CompanyName';
+
 const Home = () => {
     
     return (
         <>
             <BaseLayout>
-                <Outlet/>
+                <CompanyName/>
             </BaseLayout>
         </>
     ); 

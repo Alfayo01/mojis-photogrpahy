@@ -4,11 +4,12 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Gallery from '../pages/Gallery';
 import ErrorPage from '../error-page';
-import App from '../App';
+import { Routes } from 'react-router-dom'; 
 
 
-export const Routes = () => {
+export const AppRoutes = () => {
     return (
+        <Routes>
             <Route path="/" element= {<Home/>}>
                 <Route path="/home" element={<Home/>}/>
                 <Route exact path="about us" element={<About/>}/>
@@ -16,6 +17,8 @@ export const Routes = () => {
                 <Route exact path="gallery" element={<Gallery/>}/>
                 <Route path="*" element={<ErrorPage/>}/>
             </Route>   
+        </Routes>
+            
     );
 
 };

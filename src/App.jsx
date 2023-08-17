@@ -1,10 +1,9 @@
-import { RouterProvider } from 'react-router-dom';
 import './App.css';
 import { 
   createBrowserRouter,
-  RouterProvider,
-  //BrowserRouter
+  RouterProvider
 } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -16,28 +15,31 @@ const router = createBrowserRouter([
   {
     path: "/", 
     element: <Home/>,
+    error: <ErrorPage/>
   },
   {
-    path: "/home",
+    path: "home",
     element: <Home/>
   },
   {
-    path: "/about us",
+    path: "about us",
     element: <About/>,
   },
   {
-    path: "/contact us",
+    path: "contact us",
     element: <Contact/>,
   },
   {
-    path: "/gallery",
+    path: "gallery",
     element: <Gallery/>,
   },
 ]);
 
 function App() {
   return (
-      <RouterProvider router={router}/>
+      <RouterProvider router={router}>
+           <Outlet/>
+      </RouterProvider>
   );
 }
 
