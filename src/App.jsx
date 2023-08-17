@@ -9,8 +9,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
-//import ErrorPage from './error-page';
-
+import ErrorPage from './error-page';
+import Blog from './pages/Blog'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +32,14 @@ const router = createBrowserRouter([
   {
     path: "gallery",
     element: <Gallery/>,
+  },
+  {
+    path: "/blogs",
+    element: <Blog/>
+  },
+  {
+    path: "*",
+    errorElement: <ErrorPage/>,
   },
 ]);
 
