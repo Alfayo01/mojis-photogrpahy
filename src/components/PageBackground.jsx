@@ -8,12 +8,6 @@ let gallery = [
         src: camera,
         alt: "Picture of camera",
     },
-
-    {
-        id: 2,
-        src: 'https://depositphotos.com/photos/surf.html?qview=8450806',
-        alt: "Picture of surfer",
-    },
 ];
 
 const PageBackground = ({id, src }) => {
