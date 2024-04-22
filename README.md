@@ -1,4 +1,4 @@
-# ** Mojis Photography **
+**# Mojis Photography**
 Website developed to help photogrpahers gain more acceptance with clients and increase their popularity.In progress...
 
 # Getting Started with Create React App
