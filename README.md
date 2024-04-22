@@ -1,3 +1,6 @@
+# ** Mojis Photography **
+Website developed to help photogrpahers gain more acceptance with clients and increase their popularity.In progress...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
